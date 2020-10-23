@@ -19,13 +19,15 @@
     <form>
         <label for="Nome">Nome:</label>
         <br>
-            <input type="text" id="Nome">
+            <input type="text" id="Nome" onkeyup="validaNome()">
         <br>
+        <div id='txtNome'> </div>
     </form>
     <form>
         <label for="Email">Email:</label>
         <br>
-        <input type="text" id="Email">
+        <input type="text" id="Email" onkeyup="validaEmail()">
+        <div id='txtEmail'> </div>
         <br>
     </form>
     <form>
@@ -37,9 +39,11 @@
     <form>
         <label for="Adicionar comentario">Adicionar comentario:</label>
         <br>
-        <textarea name="" id="" cols="25" rows="5"></textarea>
+        <textarea name="" id="Adicionarcomentario" cols="25" rows="5" onkeyup="validaAdicionarcomentario()"></textarea>
+        <div id='txtAdicionarcomentario'> </div>
         <br>
-        <button>Enviar</button>
+        <button onclick="enviar">Enviar</button>
     </form>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
